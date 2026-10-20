@@ -50,46 +50,60 @@
     <h2>2. Firma digital</h2>
 
     <p>
-      La APK oficial de ViveFutTIV se genera mediante
-      una clave de firma digital del desarrollador.
+      La APK de ViveFutTIV se genera mediante una
+      clave de firma digital del desarrollador.
     </p>
 
     <p>
       Las futuras actualizaciones deberán utilizar
-      la firma compatible con la versión instalada
-      para permitir su actualización.
+      la misma clave de firma para permitir
+      una actualización compatible.
     </p>
 
     <h2>3. Verificación SHA-256</h2>
 
     <p>
-      La huella SHA-256 permite comprobar que el archivo
-      descargado coincide con la versión publicada
-      oficialmente.
+      Esta huella permite comprobar que el archivo
+      descargado coincide con la APK identificada
+      por ViveFutTIV.
     </p>
 
     <div class="notice">
-      <strong>SHA-256 de la APK:</strong>
-      pendiente de publicar tras verificar
-      el archivo de distribución.
+      <strong>SHA-256 de ViveFutTIV.apk:</strong>
+
+      <p style="overflow-wrap:anywhere;">
+        <code>0548C50ED3530419D5CCD248B06D4CEEE010630E2BECD8899A95E1D4415D5F32</code>
+      </p>
     </div>
+
+    <p>
+      Para verificar el archivo en Windows,
+      abre PowerShell y ejecuta:
+    </p>
+
+    <pre style="white-space:pre-wrap;overflow-wrap:anywhere;"><code>Get-FileHash -Algorithm SHA256 "ViveFutTIV.apk"</code></pre>
+
+    <p>
+      El resultado debe coincidir exactamente con
+      la huella publicada arriba.
+      Ejecuta el comando desde la carpeta donde
+      está guardada la APK.
+    </p>
 
     <h2>4. Permisos de la aplicación</h2>
 
     <p>
-      ViveFutTIV utiliza acceso a Internet para
-      consultar noticias e información deportiva.
+      ViveFutTIV utiliza acceso a Internet
+      para consultar noticias e información deportiva.
     </p>
 
     <p>
-      La aplicación también puede solicitar permiso
-      para mostrar notificaciones relacionadas
-      con eventos deportivos.
+      También puede solicitar permiso para mostrar
+      notificaciones relacionadas con eventos deportivos.
     </p>
 
     <p>
-      No concedas permisos que no sean necesarios
-      para el funcionamiento de la aplicación.
+      No concedas permisos innecesarios.
     </p>
 
     <h2>5. Recomendaciones de seguridad</h2>
