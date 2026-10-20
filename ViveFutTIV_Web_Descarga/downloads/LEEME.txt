@@ -1,1 +1,0 @@
-Coloca aqui ViveFutTIV.apk solo DESPUES de firmarla y verificarla. Luego cambia el boton de index.html por <a class="cta" href="downloads/ViveFutTIV.apk" download>Descargar APK</a> y publica SHA-256 en seguridad.html. Nunca subas keystore ni contraseñas.
