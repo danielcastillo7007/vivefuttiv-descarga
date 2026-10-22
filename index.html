@@ -13,6 +13,25 @@
 <style>
 :root{color-scheme:dark;--green:#15bd82;--dark:#06111b;--card:#0c1e27;--edge:#24483f;--txt:#eafff7;--sub:#b7d1ca}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--dark);color:var(--txt);font:16px/1.55 system-ui,Arial,sans-serif;margin:0}a{color:#58e5b4}header,main,footer{max-width:1100px;margin:auto;padding:18px 22px}header{display:flex;align-items:center;justify-content:space-between;gap:14px}header strong{color:#45e9af;font-size:20px}header nav{font-size:14px}h1{font-size:clamp(34px,5vw,54px);line-height:1.16;margin:0 0 20px}h2{font-size:27px;line-height:1.25;margin-top:0}h3{margin:0 0 8px}p{margin:8px 0 14px}.panel,.feature{background:#0c1e27;border:1px solid var(--edge);border-radius:20px;padding:26px}.hero{display:grid;grid-template-columns:180px 1fr;align-items:center;gap:28px;margin:22px 0}.hero>img{width:180px;height:180px;object-fit:contain;border-radius:22px}.smallnote,.muted,small{color:var(--sub)}.downloads{margin:18px 0}.button-row{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}.cta,.store-link,button.primary{display:inline-flex;align-items:center;justify-content:center;padding:13px 17px;border-radius:11px;background:var(--green);color:#051910!important;text-decoration:none;font:700 15px system-ui,Arial,sans-serif;border:1px solid transparent;cursor:pointer;min-height:46px}.cta:hover,.store-link:hover,button.primary:hover{filter:brightness(1.08)}.direct{background:#147f61!important;color:white!important}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.feature{padding:20px}.feature p{color:var(--sub)}.gallery-section,.reviews-section,.safe-section{margin:24px 0}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.gallery a{display:block;text-decoration:none}.gallery img{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;border-radius:14px;border:1px solid #315c52;background:#061019}.gallery figcaption{text-align:center;color:var(--sub);font-size:13px;padding:8px}.reviews-stat{display:flex;gap:20px;align-items:center;flex-wrap:wrap;color:var(--sub);margin:10px 0 18px}.reviews-stat b{font-size:26px;color:#fbdf7f}.review-form{max-width:640px;display:grid;gap:12px}.review-form label{display:grid;gap:5px;font-weight:650}input,textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid #466359;background:#06161c;color:#fff;font:inherit}.review-form textarea{min-height:110px;resize:vertical}.review-form button{justify-self:start}.review-item{border-top:1px solid #2d4b46;padding:14px 0}.review-item:first-child{border-top:0}.review-item h3{font-size:16px}.review-item .stars{color:#ffdc71;letter-spacing:2px}.review-item p{white-space:pre-wrap;overflow-wrap:anywhere}.status{color:#aeeace;min-height:1.3em}footer{border-top:1px solid var(--edge);margin-top:35px;font-size:13px;color:var(--sub)}footer a{color:#75e3c0}.privacy-note{font-size:13px;color:var(--sub)}@media(max-width:720px){.hero{grid-template-columns:1fr;padding:20px}.hero>img{height:120px;width:120px}.features{grid-template-columns:1fr}.gallery{gap:8px}.gallery figcaption{font-size:11px}.panel{padding:18px}.button-row>*{width:100%}}
+
+/* Resenas: puntuacion, distribucion y formulario estilo tienda de aplicaciones */
+.rating-summary{display:grid;grid-template-columns:175px minmax(0,1fr);gap:28px;align-items:center;margin:22px 0 26px}
+.rating-score .value{display:block;color:var(--txt);font-weight:850;font-size:clamp(55px,7vw,76px);line-height:1;letter-spacing:-2px}
+.rating-score .score-stars{color:#ffc95e;font-size:24px;letter-spacing:3px;display:block;margin-top:10px}
+.rating-score .count{color:var(--sub);font-size:14px}
+.rating-breakdown{display:grid;gap:9px}
+.rating-breakdown-row{display:grid;grid-template-columns:15px 1fr 33px;gap:10px;align-items:center;font-size:14px;color:var(--sub)}
+.rating-track{height:9px;background:#233740;border-radius:99px;overflow:hidden}
+.rating-fill{height:100%;background:#19bb82;border-radius:99px;transition:width .25s}
+.rating-divider{border:0;border-top:1px solid #2d4b46;margin:22px 0}
+.review-star-picker{display:flex;gap:4px;align-items:center;margin-top:5px}
+.review-star-picker button{border:0;background:transparent;color:#718a87;font-size:38px;line-height:1;padding:3px 5px;cursor:pointer;min-width:43px;min-height:45px}
+.review-star-picker button.chosen{color:#ffc95e}
+.review-star-picker button:focus-visible{outline:2px solid #58e5b4;border-radius:8px}
+.review-star-help{font-size:13px;color:var(--sub);min-height:1.5em}
+.review-form .rating-select{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.review-form .rating-label{font-weight:650}
+@media(max-width:500px){.rating-summary{grid-template-columns:110px minmax(0,1fr);gap:12px}.rating-score .value{font-size:54px}.review-star-picker button{font-size:33px;min-width:39px}}
 </style>
 </head>
 <body>
@@ -40,17 +59,30 @@
 <figure><a href="assets/capturas/captura-3.png" target="_blank" rel="noopener"><img src="assets/capturas/captura-3.png" loading="lazy" alt="Listado de noticias de fútbol en ViveFutTIV"></a><figcaption>Actualidad del fútbol</figcaption></figure>
 </div></section>
 <section class="panel reviews-section" id="opiniones"><h2>Opiniones y valoraciones</h2><p>¿Ya probaste ViveFutTIV? Comparte tu experiencia. Publicamos comentarios reales después de una revisión básica para evitar contenido ofensivo o spam.</p>
-<div class="reviews-stat" id="reviewStats" aria-live="polite">Todavía no hay reseñas publicadas.</div>
-<div id="reviewList" aria-live="polite"></div>
-<h3>Deja tu valoración</h3>
+<div id="reviewStats" class="rating-summary" aria-live="polite">
+  <div class="rating-score"><span class="value" id="ratingAverage">—</span><span class="score-stars" id="ratingAvgStars" aria-label="Sin puntuaciones">☆☆☆☆☆</span><span class="count" id="ratingCount">0 valoraciones</span></div>
+  <div class="rating-breakdown" id="ratingBreakdown" aria-label="Distribución de puntuaciones"></div>
+</div>
+<p class="muted" id="ratingSummaryNote">Se muestran las últimas 50 reseñas aprobadas. Las estadísticas se calculan sobre esas reseñas.</p>
+<hr class="rating-divider">
+<h3>Escribe una reseña</h3>
 <form class="review-form" id="reviewForm">
 <label>Nombre o apodo <input name="review_name" maxlength="60" minlength="2" placeholder="Tu nombre o apodo" required autocomplete="nickname"></label>
-<label>Tu puntuación <select name="rating" required><option value="">Selecciona estrellas</option><option value="5">★★★★★ 5 estrellas</option><option value="4">★★★★☆ 4 estrellas</option><option value="3">★★★☆☆ 3 estrellas</option><option value="2">★★☆☆☆ 2 estrellas</option><option value="1">★☆☆☆☆ 1 estrella</option></select></label>
+<div><span class="rating-label" id="ratingLabel">Tu puntuación</span>
+<select name="rating" class="rating-select" tabindex="-1" aria-hidden="true" required><option value="">Selecciona estrellas</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+<div class="review-star-picker" id="ratingPicker" role="group" aria-labelledby="ratingLabel">
+<button type="button" data-rating="1" aria-label="1 estrella" aria-pressed="false">☆</button>
+<button type="button" data-rating="2" aria-label="2 estrellas" aria-pressed="false">☆</button>
+<button type="button" data-rating="3" aria-label="3 estrellas" aria-pressed="false">☆</button>
+<button type="button" data-rating="4" aria-label="4 estrellas" aria-pressed="false">☆</button>
+<button type="button" data-rating="5" aria-label="5 estrellas" aria-pressed="false">☆</button>
+</div><div id="ratingHelp" class="review-star-help">Toca una estrella para valorar la aplicación.</div></div>
 <label>Tu comentario <textarea name="body" maxlength="800" minlength="10" placeholder="¿Qué te ha parecido ViveFutTIV?" required></textarea></label>
 <button class="primary" type="submit">Enviar valoración</button>
 <p class="privacy-note">Tu apodo, puntuación y comentario se mostrarán públicamente si se aprueban. No incluyas teléfonos, correos ni datos personales.</p>
 <p class="status" id="reviewStatus" role="status"></p>
 </form>
+<hr class="rating-divider"><h3>Opiniones de los usuarios</h3><div id="reviewList" aria-live="polite"></div>
 </section>
 <section class="panel safe-section"><h2>Descarga con confianza</h2><p>ViveFutTIV ofrece enlaces a sus fichas de distribución en Appteka y AndroidHIT, además de una opción de descarga directa desde este sitio oficial.</p><p>Comprueba la procedencia del archivo antes de instalarlo. Android puede solicitar permiso para instalar aplicaciones fuera de Google Play: mantén las protecciones del dispositivo activadas y no instales archivos de origen desconocido.</p><p><a href="seguridad.html">Consejos de seguridad</a> · <a href="privacidad.html">Política de privacidad</a></p></section>
 </main>
@@ -61,32 +93,59 @@ const REVIEWS_API='https://zinqmmwprwvtjipfwfqp.supabase.co/rest/v1/site_reviews
 const REVIEWS_PUBLIC_KEY='sb_publishable_TSOF9M-eL9DvKj42QKerxA_uZeWGw9h';
 const reviewForm=document.getElementById('reviewForm'), reviewStatus=document.getElementById('reviewStatus');
 function node(tag,text,css){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(css)e.className=css;return e;}
+const starButtons=[...document.querySelectorAll('#ratingPicker button')];
+const ratingSelect=reviewForm.elements.rating;
+const ratingHelp=document.getElementById('ratingHelp');
+function setRating(value){
+ ratingSelect.value=String(value);ratingSelect.setCustomValidity('');
+ starButtons.forEach(b=>{const on=Number(b.dataset.rating)<=value;b.textContent=on?'★':'☆';b.classList.toggle('chosen',on);b.setAttribute('aria-pressed',String(Number(b.dataset.rating)===value));});
+ ratingHelp.textContent=value+' de 5 estrellas seleccionadas';
+}
+starButtons.forEach(button=>button.addEventListener('click',()=>setRating(Number(button.dataset.rating))));
+function renderRatingSummary(rows){
+ const avg=document.getElementById('ratingAverage');const count=document.getElementById('ratingCount');const stars=document.getElementById('ratingAvgStars');const breakdown=document.getElementById('ratingBreakdown');
+ const counts=[0,0,0,0,0,0];
+ for(const r of rows){const n=Number(r.rating);if(Number.isInteger(n)&&n>=1&&n<=5)counts[n]++;}
+ const total=counts.reduce((a,b)=>a+b,0);
+ const mean=total?counts.reduce((a,v,i)=>a+v*i,0)/total:0;
+ avg.textContent=total?mean.toFixed(1):'—';count.textContent=total+' '+(total===1?'valoración':'valoraciones');
+ stars.textContent=total?'★'.repeat(Math.round(mean))+'☆'.repeat(5-Math.round(mean)):'☆☆☆☆☆';
+ stars.setAttribute('aria-label',total?mean.toFixed(1)+' de 5 estrellas':'Sin valoraciones');
+ breakdown.replaceChildren();
+ for(let n=5;n>=1;n--){
+  const row=node('div',undefined,'rating-breakdown-row');
+  const label=node('span',String(n));const track=node('div',undefined,'rating-track');
+  const fill=node('div',undefined,'rating-fill');fill.style.width=(total?counts[n]/total*100:0)+'%';
+  track.append(fill);const amount=node('span',String(counts[n]));amount.style.textAlign='right';
+  row.append(label,track,amount);breakdown.append(row);
+ }
+}
 async function loadReviews(){
- const list=document.getElementById('reviewList'),stats=document.getElementById('reviewStats');list.replaceChildren();
+ const list=document.getElementById('reviewList');list.replaceChildren();
  try{
   const response=await fetch(REVIEWS_API+'?select=review_name,rating,body,created_at&approved=eq.true&order=created_at.desc&limit=50',{headers:{'apikey':REVIEWS_PUBLIC_KEY}});
   if(!response.ok)throw new Error('La base de reseñas aún no está configurada.');
   const rows=await response.json();
-  if(!Array.isArray(rows)||!rows.length){stats.textContent='Aún no hay reseñas publicadas. ¡Sé la primera persona en dejar una!';return;}
-  const average=rows.reduce((acc,r)=>acc+Number(r.rating||0),0)/rows.length;
-  stats.textContent=average.toFixed(1)+' / 5 ★ · '+rows.length+' valoraciones publicadas (hasta 50 recientes)';
-  for(const r of rows){const article=node('article',undefined,'review-item');const stars=node('span','★'.repeat(Math.max(0,Math.min(5,Number(r.rating)||0)))+'☆'.repeat(5-Math.max(0,Math.min(5,Number(r.rating)||0))),'stars');
+  if(!Array.isArray(rows))throw Error('Respuesta inesperada');
+  renderRatingSummary(rows);
+  if(!rows.length){list.append(node('p','Aún no hay reseñas publicadas. ¡Sé la primera persona en valorar ViveFutTIV!','muted'));return;}
+  for(const r of rows){const article=node('article',undefined,'review-item');const rating=Math.max(0,Math.min(5,Number(r.rating)||0));const stars=node('span','★'.repeat(rating)+'☆'.repeat(5-rating),'stars');
    const heading=node('h3',String(r.review_name||'Visitante')+' · ');heading.append(stars);
    const date=node('small',r.created_at?new Date(r.created_at).toLocaleDateString('es-PA'):'');
    article.append(heading,date,node('p',String(r.body||'')));list.append(article);}
- }catch(e){stats.textContent='Las reseñas todavía no están disponibles. Configura la tabla en Supabase.';}
+ }catch(e){renderRatingSummary([]);list.append(node('p','Las reseñas no están disponibles por el momento.','muted'));}
 }
 reviewForm.addEventListener('submit',async(e)=>{
  e.preventDefault();reviewStatus.textContent='Enviando valoración...';
  const button=reviewForm.querySelector('button[type="submit"]');button.disabled=true;
  try{
   const form=new FormData(reviewForm); const payload={review_name:String(form.get('review_name')).trim(),rating:Number(form.get('rating')),body:String(form.get('body')).trim()};
-  if(payload.review_name.length<2||payload.body.length<10||!Number.isInteger(payload.rating)||payload.rating<1||payload.rating>5)throw Error('Completa todos los campos correctamente.');
+  if(payload.review_name.length<2||payload.body.length<10||!Number.isInteger(payload.rating)||payload.rating<1||payload.rating>5)throw Error('Selecciona entre 1 y 5 estrellas y completa los demás campos.');
   const last=Number(localStorage.getItem('vivefuttiv_last_review')||0);
   if(last&&Date.now()-last<86400000)throw Error('Ya enviaste una valoración recientemente. Intenta de nuevo mañana.');
   const response=await fetch(REVIEWS_API,{method:'POST',headers:{'apikey':REVIEWS_PUBLIC_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify(payload)});
   if(!response.ok)throw Error('No se pudo guardar la reseña. Comprueba que configuraste el SQL de Supabase.');
-  localStorage.setItem('vivefuttiv_last_review',String(Date.now()));reviewForm.reset();
+  localStorage.setItem('vivefuttiv_last_review',String(Date.now()));reviewForm.reset();starButtons.forEach(b=>{b.textContent='☆';b.classList.remove('chosen');b.setAttribute('aria-pressed','false');});ratingHelp.textContent='Toca una estrella para valorar la aplicación.';
   reviewStatus.textContent='¡Gracias! Tu valoración se recibió y aparecerá después de su revisión.';
  }catch(err){reviewStatus.textContent=err.message||'No se pudo enviar el comentario.';}finally{button.disabled=false;}
 });
