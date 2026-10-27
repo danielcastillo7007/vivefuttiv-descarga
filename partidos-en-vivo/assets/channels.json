@@ -1,0 +1,392 @@
+[
+  {
+    "id": "canal-01",
+    "name": "ESPN Extra Latin America",
+    "url": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8",
+    "brand": "ESPN",
+    "category": "Fútbol",
+    "active": true,
+    "featured": true,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-02",
+    "name": "ESPN8: The Ocho",
+    "url": "https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8",
+    "brand": "ESPN",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-03",
+    "name": "ESPN 6 Latin America",
+    "url": "https://barinaslive1.boldmss.com/ESPN_6/ESPN_6.isml/ESPN_6.m3u8",
+    "brand": "ESPN",
+    "category": "Fútbol",
+    "active": true,
+    "featured": false,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-04",
+    "name": "ESPN 5 Latin America",
+    "url": "https://barinaslive1.boldmss.com/ESPN_5/ESPN_5.isml/ESPN_5.m3u8",
+    "brand": "ESPN",
+    "category": "Fútbol",
+    "active": true,
+    "featured": false,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-05",
+    "name": "ESPN 4 Latin America",
+    "url": "https://barinaslive1.boldmss.com/ESPN_4/ESPN_4.isml/ESPN_4.m3u8",
+    "brand": "ESPN",
+    "category": "Fútbol",
+    "active": true,
+    "featured": false,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-06",
+    "name": "ESPN",
+    "url": "http://85.237.89.160:9590/usa-s/ESPN-HD/index.m3u8",
+    "brand": "ESPN",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-07",
+    "name": "ESPN",
+    "url": "http://181.78.197.59:8000/play/a07z/index.m3u8",
+    "brand": "ESPN",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-08",
+    "name": "FIFA+",
+    "url": "https://jmp2.uk/plu-66997e8d3a4ad20008e50be9.m3u8",
+    "brand": "FIFA",
+    "category": "Fútbol",
+    "active": true,
+    "featured": true,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#147be9",
+      "#071a53"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-09",
+    "name": "DD Sports",
+    "url": "https://mumbai-edge.smartplaytv.in/DDSportsHD/index.m3u8",
+    "brand": "DD",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#2466c2",
+      "#102451"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-10",
+    "name": "DAZN Heldinnen x Pluto TV",
+    "url": "https://jmp2.uk/plu-64afe50c5dc16600087f3227.m3u8",
+    "brand": "DAZN",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#652fc2",
+      "#170b32"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-11",
+    "name": "DAZN Darts x Pluto TV",
+    "url": "https://jmp2.uk/plu-64b67f0424ade50008a3be17.m3u8",
+    "brand": "DAZN",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#652fc2",
+      "#170b32"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-12",
+    "name": "CDN Deportes",
+    "url": "https://hls.tvabierta.net/hls/036.m3u8",
+    "brand": "CDN",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#168acb",
+      "#052847"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-13",
+    "name": "WWE Network",
+    "url": "http://103.151.60.162:2122/play/a00p/index.m3u8",
+    "brand": "WWE",
+    "category": "Entretenimiento",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#a2122f",
+      "#150718"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-14",
+    "name": "TR Sport",
+    "url": "https://livetr.teleromagna.it/mia/live/playlist.m3u8",
+    "brand": "TR",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#22aaca",
+      "#11244d"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-15",
+    "name": "Tigo Sports",
+    "url": "http://45.134.141.161:2200/ARG/Tigo_Sports/tracks-v1a1/mono.m3u8",
+    "brand": "TIGO",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#efb81d",
+      "#1249a0"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-16",
+    "name": "Sporty TV",
+    "url": "https://dash2.antik.sk/live/sporty_tv/index.m3u8",
+    "brand": "SPORTY",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#ec304d",
+      "#410e30"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-17",
+    "name": "Red Bull TV",
+    "url": "https://db34cc6127ac459db55cab5f97cd66b9.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-680-WORBAUENFAST-WHALETVPLUS/680/whaletvplus/hls/master/playlist.m3u8",
+    "brand": "RED BULL",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#315ff0",
+      "#090f39"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-18",
+    "name": "Real Madrid TV English",
+    "url": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/bitrate_3.m3u8",
+    "brand": "RMTV",
+    "category": "Fútbol",
+    "active": true,
+    "featured": true,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#4761b7",
+      "#121c49"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-19",
+    "name": "Pluto TV Sport",
+    "url": "https://jmp2.uk/plu-608030eff4b6f70007e1684c.m3u8",
+    "brand": "PLUTO",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#7131cf",
+      "#1f0c3f"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-20",
+    "name": "NBA TV",
+    "url": "http://23.237.104.106:8080/USA_NBA/index.m3u8",
+    "brand": "NBA",
+    "category": "Baloncesto",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#337cd6",
+      "#101c55"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-21",
+    "name": "Fox Sports 1",
+    "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
+    "brand": "FOX",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#276fab",
+      "#061c32"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-22",
+    "name": "Fox Sports",
+    "url": "http://138.59.227.20:8000/play/a085/index.m3u8",
+    "brand": "FOX",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#276fab",
+      "#061c32"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-23",
+    "name": "ESPN 4",
+    "url": "http://181.78.197.59:8000/play/a07n/index.m3u8",
+    "brand": "ESPN",
+    "category": "Fútbol",
+    "active": true,
+    "featured": false,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-24",
+    "name": "ESPN 2",
+    "url": "http://85.237.89.160:9590/usa-s/ESPN-2-HD/index.m3u8",
+    "brand": "ESPN",
+    "category": "Deportes",
+    "active": true,
+    "featured": false,
+    "description": "Señal deportiva • transmisión en directo",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-25",
+    "name": "ESPN 7 Latin America",
+    "url": "https://barinaslive1.boldmss.com/ESPN_7/ESPN_7.isml/ESPN_7.m3u8",
+    "brand": "ESPN",
+    "category": "Fútbol",
+    "active": true,
+    "featured": false,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  },
+  {
+    "id": "canal-26",
+    "name": "ESPN Premium",
+    "url": "http://158.172.155.130:8000/play/a0ao/index.m3u8",
+    "brand": "ESPN",
+    "category": "Fútbol",
+    "active": true,
+    "featured": false,
+    "description": "Fútbol y programación deportiva",
+    "theme": [
+      "#d20820",
+      "#250a17"
+    ],
+    "requiresReview": true
+  }
+]
